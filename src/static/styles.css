@@ -1,3 +1,57 @@
+/* Signup Container Styles */
+#signup-container {
+  margin-top: 20px;
+}
+
+#signup-container h3 {
+  color: #1a237e;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+#signup-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#signup-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#signup-form input,
+#signup-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#signup-form button[type="submit"] {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+#signup-form button[type="submit"]:hover {
+  background-color: #3949ab;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -80,16 +134,36 @@ section h3 {
   border-top: 1px solid #e0e0e0;
 }
 
-.participants-section ul {
+
+.participants-list {
+.participants-list {
   margin-left: 20px;
   margin-top: 8px;
 }
 
-.participants-section li {
+.participant-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 6px;
   color: #555;
 }
 
+.delete-btn {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.delete-btn:hover {
+  background: #ffeaea;
+  color: #a31515;
+}
 .participants-section p {
   color: #999;
   font-style: italic;
